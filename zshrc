@@ -31,5 +31,12 @@ source $ZSH/oh-my-zsh.sh
 alias slt='"/opt/Sublime Text 2/sublime_text"'
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
-alias youtube='youtube-dl -t'
+alias youtube='/home/myusuf3/Github/youtube-dl/youtube-dl -t'
  
+source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export PATH=/home/myusuf3/android_sdk/tools:$PATH
+export PATH=$HOME/Node/node/bin:$PATH
+export NODE_PATH=$HOME/Node/node:$HOME/Node/node/lib/node_modules
+export PYTHONPATH="/home/myusuf3/Github/delorean/":$PYTHONPATH
+
