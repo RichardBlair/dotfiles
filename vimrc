@@ -20,4 +20,4 @@ set ignorecase                  	" searches are case insensitive...
 set smartcase                   	" ... unless they contain at least one capital letter
 
 "" Color Scheme
-colorscheme Tomorrow			" Tomorrow Theme
+""colorscheme Tomorrow			" Tomorrow Theme
