@@ -1,3 +1,5 @@
 #!/bin/bash
 
-ln -s .vimrc ~/.vimrc
+ln -s ~/Github/dotfiles/.vimrc ~/.vimrc
+ln -s ~/Github/dotfiles/.zshrc ~/.zshrc
+
