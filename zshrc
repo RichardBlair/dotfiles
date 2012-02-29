@@ -41,6 +41,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
 alias youtube='~/Github/youtube-dl/youtube-dl -t' 
-alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g $*"
+alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
 
 
