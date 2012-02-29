@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "initializing submodules"
+git submodule init
+git submodule update
+
 echo "Deleting the old files"
 rm ~/.vimrc
 rm ~/.zshrc
