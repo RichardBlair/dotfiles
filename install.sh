@@ -11,6 +11,7 @@
 echo "Deleting the old files"
 rm ~/.vimrc
 rm ~/.zshrc
+rm ~/.vim
 
 echo "Symlinking files"
 ln -s ~/Github/dotfiles/vimrc ~/.vimrc
