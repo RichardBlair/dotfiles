@@ -19,5 +19,9 @@ set incsearch                   	" incremental searching
 set ignorecase                  	" searches are case insensitive...
 set smartcase                   	" ... unless they contain at least one capital letter
 
+"" Plugins
+nmap <F8> :TagbarToggle<CR>         " mapping f8 to the TagbarToggle
+
+
 "" Color Scheme
 ""colorscheme Tomorrow			" Tomorrow Theme
