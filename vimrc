@@ -20,8 +20,8 @@ set ignorecase                  	" searches are case insensitive...
 set smartcase                   	" ... unless they contain at least one capital letter
 
 "" Plugins
-nmap <F8> :TagbarToggle<CR>         " mapping f8 to the TagbarToggle
-
+nmap <F8> :TagbarToggle<CR>         " mapping f8 to TagbarToggle
+nmap <F2> :NERDTreeToggle<CR>       " mapping f2 to NERDTreeToggle
 
 "" Color Scheme
 ""colorscheme Tomorrow			" Tomorrow Theme
