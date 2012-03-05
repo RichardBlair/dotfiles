@@ -8,11 +8,13 @@ echo "Deleting the old files"
 rm ~/.vimrc
 rm ~/.zshrc
 rm ~/.vim
+rm ~/.gvim
 
 echo "Symlinking files"
 ln -s ~/Github/dotfiles/vimrc ~/.vimrc
 ln -s ~/Github/dotfiles/zshrc ~/.zshrc
 ln -s ~/Github/dotfiles/vim ~/.vim
+ln -s ~/Github/dotfiles/gvim ~/.gvim
 
 echo "Updating submodules"
 git submodule foreach git pull origin master --recurse-submodules
