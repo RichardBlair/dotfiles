@@ -32,10 +32,12 @@ ZSH_THEME="kennethreitz"
 plugins=(git pip django python brew)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias runserver='python manage.py runserver'
