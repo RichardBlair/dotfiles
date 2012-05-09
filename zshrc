@@ -44,5 +44,5 @@ alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
 alias youtube='~/Github/youtube-dl/youtube-dl -t' 
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
-alias celery='python manage.py celeryd -l INFO'
+alias celeryd='python manage.py celeryd -l INFO'
 
