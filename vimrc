@@ -25,3 +25,6 @@ nmap <F2> :NERDTreeToggle<CR>       " mapping f2 to NERDTreeToggle
 
 "" Color Scheme
 colorscheme tomorrow_night			" Tomorrow Theme
+
+" Disable Pylint on Save
+let g:pymode_lint_write = 0         " python-mode
