@@ -22,6 +22,7 @@ set smartcase                   	" ... unless they contain at least one capital 
 "" Plugins
 nmap <F8> :TagbarToggle<CR>         " mapping f8 to TagbarToggle
 nmap <F2> :NERDTreeToggle<CR>       " mapping f2 to NERDTreeToggle
+nnoremap <F5> :GundoToggle<CR>      " mapping f5 to Gundo
 
 "" Color Scheme
 colorscheme tomorrow_night			" Tomorrow Theme
