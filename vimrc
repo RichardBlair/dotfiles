@@ -28,3 +28,8 @@ colorscheme tomorrow_night			" Tomorrow Theme
 
 " Disable Pylint on Save
 let g:pymode_lint_write = 0         " python-mode
+
+set laststatus=2                    " Always show the statusline
+
+" Enable fancy mode 
+let g:Powerline_symbols = 'fancy'   " Powerline

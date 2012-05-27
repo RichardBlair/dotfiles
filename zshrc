@@ -46,3 +46,5 @@ alias youtube='~/Github/youtube-dl/youtube-dl -t'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
 alias celeryd='python manage.py celeryd --loglevel=info'
 
+# Terminal 256 colors
+export TERM="xterm-256color"
