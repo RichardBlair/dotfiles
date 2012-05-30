@@ -32,15 +32,19 @@ ZSH_THEME="kennethreitz"
 plugins=(git pip django python brew)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:
+export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
 alias youtube='~/Github/youtube-dl/youtube-dl -t' 
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
+alias celeryd='python manage.py celeryd --loglevel=info'
 
-
+# Terminal 256 colors
+export TERM="xterm-256color"
