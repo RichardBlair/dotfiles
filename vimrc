@@ -6,6 +6,8 @@ syntax enable
 set encoding=utf-8
 set showcmd                     	" display incomplete commands
 filetype plugin indent on       	" load file type plugins + indentation
+set colorcolumn=80
+set number
 
 "" Whitespace
 set nowrap                      	" don't wrap lines
@@ -20,8 +22,20 @@ set ignorecase                  	" searches are case insensitive...
 set smartcase                   	" ... unless they contain at least one capital letter
 
 "" Plugins
-nmap <F8> :TagbarToggle<CR>         " mapping f8 to TagbarToggle
-nmap <F2> :NERDTreeToggle<CR>       " mapping f2 to NERDTreeToggle
+nmap <F8> :TagbarToggle<CR>         " mapping gt to TagbarToggle
+nmap <F2> :NERDTreeToggle<CR>       " mapping gn to NERDTreeToggle
 
 "" Color Scheme
-colorscheme tomorrow_night			" Tomorrow Theme
+colorscheme xoria256
+
+"" NERDTree Specific
+let NERDTreeIgnore=['\.vim$','\*.pyc$','\.git[[dir]]']
+
+"" Pymode
+call pymode#Default("g:pymode_folding", 0)  "NO MORE FOLDING
+call pymode#Default("g:pymode_utils_whitespaces", 1)
+
+hi CursorLine guibg=#9C9C9C
+
+" " Enable fancy mode 
+let g:Powerline_symbols = 'fancy'   " Powerline
