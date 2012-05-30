@@ -21,7 +21,6 @@ set incsearch                       " incremental searching
 set ignorecase                      " searches are case insensitive...
 set smartcase                       " ... unless they contain at least one capital letter
 
-<<<<<<< HEAD
 "" Plugins
 nmap <F8> :TagbarToggle<CR>         " mapping gt to TagbarToggle
 nmap <F2> :NERDTreeToggle<CR>       " mapping gn to NERDTreeToggle
