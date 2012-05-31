@@ -35,6 +35,7 @@ let NERDTreeIgnore=['\.vim$','\*.pyc$','\.git[[dir]]']
 call pymode#Default("g:pymode_folding", 0)  "NO MORE FOLDING
 call pymode#Default("g:pymode_utils_whitespaces", 1)
 
+hi ColorColumn ctermbg=Black guibg=Black
 hi CursorLine guibg=#9C9C9C
 
 " " Enable fancy mode 
