@@ -1,4 +1,4 @@
-Mahdi Yusuf's Dot Files
+Richard Blair's Dot Files
 =======================
 
 These are my configs and setup a system the way I like it.
