@@ -1,3 +1,5 @@
+set clipboard=unnamed
+
 call pathogen#runtime_append_all_bundles()  " adding pathogen to vimrc
 call pathogen#helptags()
 
@@ -24,6 +26,7 @@ set smartcase                       " ... unless they contain at least one capit
 "" Plugins
 nmap <F8> :TagbarToggle<CR>         " mapping gt to TagbarToggle
 nmap <F2> :NERDTreeToggle<CR>       " mapping gn to NERDTreeToggle
+nnoremap <F3> :NumbersToggle<CR>
 
 "" Color Scheme
 colorscheme xoria256
@@ -34,6 +37,7 @@ let NERDTreeIgnore=['\.vim$','\*.pyc$','\.git[[dir]]']
 "" Pymode
 call pymode#Default("g:pymode_folding", 0)  "NO MORE FOLDING
 call pymode#Default("g:pymode_utils_whitespaces", 1)
+
 
 hi ColorColumn ctermbg=Black guibg=Black
 hi CursorLine guibg=#9C9C9C
