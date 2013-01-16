@@ -36,7 +36,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 
-export PATH=/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:
+export PATH=/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/.rbenv/bin:/usr/local/Cellar/graphicsmagick/1.3.17/bin:
 export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -51,3 +51,13 @@ alias cdswix='cd ~/code/new_swix/'
 
 # Terminal 256 colors
 export TERM="xterm-256color"
+
+#RUBY TWEAKS
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000
+
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_FREE_MIN=500000
+export RUBY_HEAP_MIN_SLOTS=40000
+
+eval "$(rbenv init -)"
