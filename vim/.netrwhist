@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/richardblair/.rbenv'
+let g:netrw_dirhist_2='/Users/richardblair/code/personal/study_hard/.git'
+let g:netrw_dirhist_3='/Users/richardblair/dotfiles'
+let g:netrw_dirhist_4='/Users/richardblair/code/work/ruby/shopify/config/initializers'
+let g:netrw_dirhist_5='/Users/richardblair/.vim'

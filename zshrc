@@ -8,8 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="kennethreitz"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+#alias zshconf="vim ~/.zshrc"
+#alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -18,7 +18,7 @@ ZSH_THEME="kennethreitz"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -29,25 +29,37 @@ ZSH_THEME="kennethreitz"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip django python brew)
+plugins=(git pip django python brew rails3 ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
 
-export PATH=/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/.rbenv/bin:/usr/local/Cellar/graphicsmagick/1.3.17/bin:
+export PATH=/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/.rbenv/bin:/Users/richardblair/anaconda/bin:
 export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias runserver='python manage.py runserver'
-alias syncdb='python manage.py syncdb'
-alias youtube='~/Github/youtube-dl/youtube-dl -t' 
-alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
-alias celeryd='python manage.py celeryd --loglevel=info'
+alias youtube='~/code/personal/youtube-dl/youtube-dl -t'
+
+
 alias cdcode='cd ~/code/'
-alias cdsm='cd ~/code/SourceMetrics/'
-alias cdswix='cd ~/code/new_swix/'
+alias cdwork='cdcode && cd ./work'
+alias cdwruby='cdwork && cd ./ruby'
+alias cdshopify='cdwruby && cd ./shopify'
+alias calendar='paython -m calendar'
+
+alias bx="bundle exec"
+alias rsd="bundle exec rails server --debugger"
+alias rk="bundle exec rake"
+alias rkdm="bundle exec rake db:migrate && bundle exec rake db:test:prepare"
+alias rktp="bundle exec rake db:test:prepare"
+alias rkt="rake test RAILS_PARALLEL_WORKERS=4 PARALLEL=1"
+alias rt="ruby -Itest"
+
+alias flush_all="echo 'flush_all' | nc localhost 21211"
+
+alias jsfind='find . -name  "*.js.coffee" | xargs grep -n'
 
 # Terminal 256 colors
 export TERM="xterm-256color"
@@ -59,8 +71,10 @@ export RUBY_FREE_MIN=200000
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
 export RUBY_HEAP_MIN_SLOTS=40000
+export RAILS_PARALLEL_WORKERS=4
 
 eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+source /opt/boxen/env.sh
