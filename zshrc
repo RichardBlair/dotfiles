@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kennethreitz"
+ZSH_THEME="random"
 
 # Example aliases
 #alias zshconf="vim ~/.zshrc"
@@ -47,7 +47,7 @@ alias cdcode='cd ~/code/'
 alias cdwork='cdcode && cd ./work'
 alias cdwruby='cdwork && cd ./ruby'
 alias cdshopify='cdwruby && cd ./shopify'
-alias calendar='paython -m calendar'
+alias calendar='python -m calendar'
 
 alias bx="bundle exec"
 alias rsd="bundle exec rails server --debugger"
