@@ -44,8 +44,8 @@ colorscheme xoria256
 let NERDTreeIgnore=['\.vim$','\*.pyc$','\.git[[dir]]']
 
 "" Pymode
-call pymode#Default("g:pymode_folding", 0)  "NO MORE FOLDING
-call pymode#Default("g:pymode_utils_whitespaces", 1)
+let g:pymode_folding = 0  "NO MORE FOLDING
+let g:pymode_utils_whitespaces = 1
 
 "" File Extensions
 autocmd BufRead,BufNewFile *.coffee set filetype=coffee
