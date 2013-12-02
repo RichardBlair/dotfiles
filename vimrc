@@ -55,7 +55,7 @@ autocmd BufRead,BufNewFile *htm.erb set filetype=html
 hi ColorColumn ctermbg=Black guibg=Black
 hi CursorLine guibg=#9C9C9C
 
-" " Enable fancy mode 
+" " Enable fancy mode
 let g:Powerline_symbols = 'fancy'   " Powerline
 
 
