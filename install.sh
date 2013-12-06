@@ -20,6 +20,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 echo "Updating submodules"
+git submodule update --init
 git submodule foreach git pull origin master --recurse-submodules
 
 echo "All done."
