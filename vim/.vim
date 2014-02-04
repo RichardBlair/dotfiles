@@ -1,1 +1,1 @@
-/home/richard/dotfiles/vim
+/Users/richardblair/dotfiles/vim
