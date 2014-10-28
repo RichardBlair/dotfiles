@@ -18,6 +18,7 @@ ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/bash_profile ~/.bash_profile
 
 echo "Updating submodules"
 git submodule foreach git pull origin master --recurse-submodules
