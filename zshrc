@@ -36,18 +36,10 @@ unsetopt correct_all
 
 # Customize to your needs...
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/.rbenv/bin:
-export PATH=$PATH:/usr/local/sbin
-source /usr/local/bin/virtualenvwrapper.sh
+export PATH="/home/vagrant/.gem/ruby/2.1.5/bin:/usr/lib/shopify-ruby/2.1.5-shopify1/lib/ruby/gems/2.1.0/bin:/usr/lib/shopify-ruby/2.1.5-shopify1/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 alias youtube='~/code/personal/youtube-dl/youtube-dl -t'
 
-
-alias cdcode='cd ~/code/'
-alias cdwork='cdcode && cd ./work'
-alias cdwruby='cdwork && cd ./ruby'
-alias cdshopify='cdwruby && cd ./shopify'
-alias calendar='paython -m calendar'
 
 alias bx="bundle exec"
 alias rsd="bundle exec rails server --debugger"
@@ -55,22 +47,10 @@ alias rk="bundle exec rake"
 alias rkdm="bundle exec rake db:migrate && bundle exec rake db:test:prepare"
 alias rktp="bundle exec rake db:test:prepare"
 alias rkt="rake test RAILS_PARALLEL_WORKERS=4 PARALLEL=1"
-alias rt="ruby -Itest"
+alias rt="bundle exec ruby -Itest"
+alias chaching="git commit -am "
+alias addto="git add . && git commit --amend --no-edit"
 
-alias flush_all="echo 'flush_all' | nc localhost 21211"
+alias flush_all="echo 'flush_all' | nc localhost 11211"
 
 alias jsfind='find . -name  "*.js.coffee" | xargs grep -n'
-
-# Terminal 256 colors
-export TERM="xterm-256color"
-
-#RUBY TWEAKS
-export RUBY_GC_MALLOC_LIMIT=60000000
-export RUBY_FREE_MIN=200000
-
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_FREE_MIN=500000
-export RUBY_HEAP_MIN_SLOTS=40000
-export RAILS_PARALLEL_WORKERS=4
-
-eval "$(rbenv init -)"

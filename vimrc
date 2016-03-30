@@ -54,7 +54,6 @@ hi CursorLine guibg=#9C9C9C
 " " Enable fancy mode
 let g:Powerline_symbols = 'fancy'   " Powerline
 
-
 let g:ctrlp_custom_ignore = {
   \ 'dir':  'migrate$',
   \ 'file': 'tags$',
