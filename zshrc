@@ -29,7 +29,7 @@ DISABLE_LS_COLORS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip django python brew rails ruby bundler)
+plugins=(git pip django python brew rails ruby bundler docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -40,37 +40,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11
 export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias youtube='~/code/personal/youtube-dl/youtube-dl -t'
-
-
-alias cdcode='cd ~/code/'
-alias cdwork='cdcode && cd ./work'
-alias cdwruby='cdwork && cd ./ruby'
-alias cdshopify='cdwruby && cd ./shopify'
-alias calendar='paython -m calendar'
-
-alias bx="bundle exec"
-alias rsd="bundle exec rails server --debugger"
-alias rk="bundle exec rake"
-alias rkdm="bundle exec rake db:migrate && bundle exec rake db:test:prepare"
-alias rktp="bundle exec rake db:test:prepare"
-alias rkt="rake test RAILS_PARALLEL_WORKERS=4 PARALLEL=1"
-alias rt="ruby -Itest"
-
-alias flush_all="echo 'flush_all' | nc localhost 21211"
-
-alias jsfind='find . -name  "*.js.coffee" | xargs grep -n'
-
 # Terminal 256 colors
 export TERM="xterm-256color"
-
-#RUBY TWEAKS
-export RUBY_GC_MALLOC_LIMIT=60000000
-export RUBY_FREE_MIN=200000
-
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_FREE_MIN=500000
-export RUBY_HEAP_MIN_SLOTS=40000
-export RAILS_PARALLEL_WORKERS=4
 
 eval "$(rbenv init -)"
