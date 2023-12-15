@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kennethreitz"
+ZSH_THEME="robbyrussell"
 
 # Example aliases
 #alias zshconf="vim ~/.zshrc"
@@ -29,18 +29,24 @@ DISABLE_LS_COLORS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip django python brew rails ruby bundler docker docker-compose)
+plugins=(git pip python brew rails ruby bundler docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-# Customize to your needs...
-
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/.rbenv/bin:
-export PATH=$PATH:/usr/local/sbin
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Terminal 256 colors
 export TERM="xterm-256color"
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
-eval "$(rbenv init -)"
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export AWS_DEFAULT_PROFILE=default
+export AWS_PROFILE=default
+
+eval "$(/home/richardlblair/.rbenv/bin/rbenv init - zsh)"
